@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">RecsFromTechs</string>
+    <string name="login_button">Login</string>
+    <string name="register_button">Register</string>
+    <string name="title">Recs From Techs</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="title_activity_register">Register</string>
+    <string name="cancel">Cancel</string>
+    <string name="loginUnsuccessful">Login was Unsuccessful</string>
+    <string name="title_activity_dashboard">dashboard</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="logout">Logout</string>
+</resources>
