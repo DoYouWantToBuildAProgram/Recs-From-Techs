@@ -1,19 +1,29 @@
 package com.example.erica.recsfromtechs;
 
+import android.content.SharedPreferences;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.content.Intent;
 import android.view.View;
 
+import java.util.HashMap;
 
-public class MainActivity extends ActionBarActivity {
+
+public class MainActivity extends AppCompatActivity {
+    SharedPreferences passwords;
+    SharedPreferences.Editor editPasswords;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        passwords  = getSharedPreferences("MyPref", MODE_PRIVATE);
+        editPasswords = passwords.edit();
+        editPasswords.putString("bob", "password");
+        editPasswords.commit();
     }
 
     @Override
@@ -40,11 +50,14 @@ public class MainActivity extends ActionBarActivity {
 
     public void login(View view) {
         Intent intent = new Intent(this, Login.class);
+
+
         startActivity(intent);
     }
 
     public void register(View view) {
         Intent intent = new Intent(this, Register.class);
+
         startActivity(intent);
     }
 

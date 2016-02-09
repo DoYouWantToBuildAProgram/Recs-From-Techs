@@ -11,7 +11,7 @@
 
     <TextView
         android:id="@+id/header"
-        android:text="@string/register_button"
+        android:text="@string/login_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
@@ -20,5 +20,33 @@
         android:textStyle="bold"
         android:background="@android:color/holo_red_light"
         />
+    <TextView
+        android:id="@+id/text"
+        android:text="Register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        />
+    <EditText android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/username"/>
+    <EditText android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:onClick="addUser"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cancel"
+        android:onClick="cancel"/>
+
 
 </LinearLayout>
