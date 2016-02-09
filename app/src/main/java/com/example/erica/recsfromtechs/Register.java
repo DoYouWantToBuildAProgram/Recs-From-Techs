@@ -6,6 +6,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.content.Intent;
 
 public class Register extends AppCompatActivity {
 
@@ -24,6 +25,11 @@ public class Register extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+    }
+
+    public void registerUser(View view) {
+        Intent intent = new Intent(this,Login.class);
+        startActivity(intent);
     }
 
 }

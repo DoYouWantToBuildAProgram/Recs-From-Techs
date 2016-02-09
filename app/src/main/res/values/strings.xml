@@ -14,4 +14,7 @@
     <string name="title_activity_dashboard">dashboard</string>
     <string name="dashboard">Dashboard</string>
     <string name="logout">Logout</string>
+    <string name="createuser">Create a Username</string>
+    <string name="createpass">Create a Password</string>
+    <string name="confirmpass">Confirm Password</string>
 </resources>
