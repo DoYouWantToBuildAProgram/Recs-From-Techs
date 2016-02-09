@@ -33,7 +33,7 @@ public class Login extends AppCompatActivity {
             }
         });
 
-        usernames.put("bob","password");
+        usernames.put("user","password");
     }
 
     public void cancel(View view) {
