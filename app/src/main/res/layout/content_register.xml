@@ -20,12 +20,18 @@
         android:textStyle="bold"
         android:background="@android:color/holo_red_light"
         />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
     <EditText android:id="@+id/createuser"
         android:layout_width="209dp"
         android:layout_height="wrap_content"
         android:hint="@string/createuser"
         android:layout_gravity="center_horizontal" />
     <EditText android:id="@+id/createpass"
+        android:typeface="serif"
         android:layout_width="209dp"
         android:layout_height="wrap_content"
         android:hint="@string/createpass"
@@ -40,15 +46,23 @@
         android:layout_height="wrap_content"
         android:hint="@string/email"
         android:layout_gravity="center_horizontal" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/register_button"
+        android:textColor="@android:color/white"
         android:textStyle="bold"
         android:padding="10dp"
         android:onClick="registerUser"
         android:textSize="20sp"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/holo_red_light" />
 
 
 </LinearLayout>
