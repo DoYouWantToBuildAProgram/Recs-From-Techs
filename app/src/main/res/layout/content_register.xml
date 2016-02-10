@@ -31,9 +31,10 @@
         android:hint="@string/createuser"
         android:layout_gravity="center_horizontal" />
     <EditText android:id="@+id/createpass"
-        android:typeface="serif"
         android:layout_width="209dp"
         android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
         android:hint="@string/createpass"
         android:layout_gravity="center_horizontal" />
     <EditText android:id="@+id/major"

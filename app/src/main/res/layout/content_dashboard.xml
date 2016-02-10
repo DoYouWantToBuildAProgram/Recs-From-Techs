@@ -19,13 +19,20 @@
         android:textColor="@android:color/white"
         android:textStyle="bold"
         android:background="@android:color/holo_red_light"
+
         />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
         android:text="logout"
-        android:onClick="logout"/>
+        android:onClick="logout"
+        android:background="@android:color/holo_red_light" />
 
 
 

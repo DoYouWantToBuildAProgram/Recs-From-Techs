@@ -20,23 +20,50 @@
         android:textStyle="bold"
         android:background="@android:color/holo_red_light"
         />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal" />
+
     <EditText android:id="@+id/username"
-        android:layout_width="wrap_content"
+        android:layout_width="209dp"
         android:layout_height="wrap_content"
-        android:hint="@string/username"/>
+        android:hint="@string/username"
+        android:layout_gravity="center_horizontal" />
+
     <EditText android:id="@+id/password"
-        android:layout_width="wrap_content"
+        android:layout_width="209dp"
         android:layout_height="wrap_content"
-        android:hint="@string/password"/>
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="@string/password"
+        android:layout_gravity="center_horizontal" />
+
+
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Login"
-        android:onClick="loginSuccessful"/>
+        android:textColor="@android:color/white"
+        android:onClick="loginSuccessful"
+        android:layout_gravity="right"
+        android:background="@android:color/holo_red_light" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_gravity="right" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
         android:text="cancel"
-        android:onClick="cancel"/>
+        android:onClick="cancel"
+        android:layout_gravity="right"
+        android:background="@android:color/holo_red_light"
+        android:clickable="true" />
 
 </LinearLayout>
