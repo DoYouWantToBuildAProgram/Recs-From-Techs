@@ -18,7 +18,7 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="10dp" />
+        android:layout_height="50dp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -26,11 +26,12 @@
         android:textColor="@android:color/white"
         android:text="@string/login_button"
         android:onClick="login"
-        android:background="@android:color/holo_red_light" />
+        android:background="@android:color/holo_red_light"
+        android:layout_gravity="center_horizontal" />
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="10dp" />
+        android:layout_height="30dp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -38,6 +39,7 @@
         android:textColor="@android:color/white"
         android:text="@string/register_button"
         android:onClick="register"
-        android:background="@android:color/holo_red_light" />
+        android:background="@android:color/holo_red_light"
+        android:layout_gravity="center_horizontal" />
 
 </LinearLayout>

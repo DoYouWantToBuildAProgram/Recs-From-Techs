@@ -25,12 +25,12 @@
         android:layout_width="match_parent"
         android:layout_height="50dp" />
 
-    <EditText android:id="@+id/createuser"
+    <EditText android:id="@+id/username"
         android:layout_width="209dp"
         android:layout_height="wrap_content"
         android:hint="@string/createuser"
         android:layout_gravity="center_horizontal" />
-    <EditText android:id="@+id/createpass"
+    <EditText android:id="@+id/password"
         android:layout_width="209dp"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
@@ -60,7 +60,7 @@
         android:textColor="@android:color/white"
         android:textStyle="bold"
         android:padding="10dp"
-        android:onClick="registerUser"
+        android:onClick="addUser"
         android:textSize="20sp"
         android:layout_gravity="center_horizontal"
         android:background="@android:color/holo_red_light" />
