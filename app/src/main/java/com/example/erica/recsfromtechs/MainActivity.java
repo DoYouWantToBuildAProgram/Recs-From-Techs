@@ -48,6 +48,12 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    /**
+     * This method is for the login in button on the main page and
+     * it changes the view to the Login screen
+     *
+     * @param view the view of the current page
+     */
     public void login(View view) {
         Intent intent = new Intent(this, Login.class);
 
@@ -55,6 +61,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    /**
+     * This method is used for the register button and changes the view to the register page
+     *
+     * @param view the view of the current page
+     */
     public void register(View view) {
         Intent intent = new Intent(this, Register.class);
 
