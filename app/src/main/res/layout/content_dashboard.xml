@@ -7,7 +7,8 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.erica.recsfromtechs.dashboard"
     tools:showIn="@layout/activity_dashboard"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#333333">
 
     <TextView
         android:id="@+id/header"
@@ -16,23 +17,29 @@
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:textSize="40sp"
-        android:textColor="@android:color/white"
+        android:textColor="#B9090B"
         android:textStyle="bold"
-        android:background="@android:color/holo_red_light"
+        android:background="#231f20"
 
         />
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="10dp" />
+        android:layout_height="10dp"
+        android:background= "#3d4141"
+        />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@android:color/white"
+
         android:text="logout"
         android:onClick="logout"
-        android:background="@android:color/holo_red_light" />
+        android:background="#B9090B"
+        android:textColor="#FFFFFF"
+        android:textStyle = "bold"
+        />
+
 
 
 
