@@ -7,29 +7,34 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.erica.recsfromtechs.Login"
     tools:showIn="@layout/activity_login"
-    android:orientation="vertical">
+    android:background="#333333"
+    android:orientation="vertical"
+    >
 
     <TextView
         android:id="@+id/header"
-        android:text="@string/login_button"
+        android:text="Recs from Techs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:textSize="40sp"
-        android:textColor="@android:color/white"
+        android:textColor="#B9090B"
         android:textStyle="bold"
-        android:background="@android:color/holo_red_light"
+        android:background="#231f20"
         />
+
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_gravity="center_horizontal" />
+        android:layout_height="100dp"
+        android:background= "#3d4141"
+        />
 
     <EditText android:id="@+id/username"
         android:layout_width="209dp"
         android:layout_height="wrap_content"
         android:hint="@string/username"
+        android:textColorHint="#FFFFFF"
         android:layout_gravity="center_horizontal" />
 
     <EditText android:id="@+id/password"
@@ -38,35 +43,50 @@
         android:inputType="textPassword"
         android:ems="10"
         android:hint="@string/password"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:textColorHint="#FFFFFF" />
 
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="10dp"
-        android:layout_gravity="center_horizontal" />
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+         />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login"
-        android:textColor="@android:color/white"
+        android:text="SIGN IN"
         android:onClick="loginSuccessful"
         android:textStyle="bold"
         android:layout_gravity="right"
-        android:background="@android:color/holo_red_light" />
+        android:background="#B9090B"
+        android:textColor="#FFFFFF"
+        />
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="10dp"
-        android:layout_gravity="right" />
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:background="#6a737b"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="cancel"
+        android:text="CANCEL"
         android:onClick="cancel"
-        android:layout_gravity="left"
-        android:clickable="true" />
+        android:textStyle="bold"
+        android:layout_gravity="right"
+        android:clickable="true"
+        android:background="#B9090B"
+        android:textColor="#FFFFFF"
+        />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="#6a737b"/>
+
 
 </LinearLayout>
