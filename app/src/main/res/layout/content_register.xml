@@ -7,46 +7,88 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.erica.recsfromtechs.Register"
     tools:showIn="@layout/activity_register"
+    android:background="#333333"
     android:orientation="vertical">
 
     <TextView
         android:id="@+id/header"
-        android:text="@string/login_button"
+        android:text="@string/register_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:textSize="40sp"
-        android:textColor="@android:color/white"
+        android:textColor="#B9090B"
         android:textStyle="bold"
-        android:background="@android:color/holo_red_light"
+        android:background="#231f20"
         />
-    <TextView
-        android:id="@+id/text"
-        android:text="Register"
+
+    <Space
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        />
+        android:layout_height="50dp" />
+
     <EditText android:id="@+id/username"
-        android:layout_width="wrap_content"
+        android:layout_width="209dp"
         android:layout_height="wrap_content"
-        android:hint="@string/username"/>
+        android:hint="@string/createuser"
+        android:textColorHint="#FFFFFF"
+        android:layout_gravity="center_horizontal" />
     <EditText android:id="@+id/password"
-        android:layout_width="wrap_content"
+        android:layout_width="209dp"
         android:layout_height="wrap_content"
-        android:hint="@string/password"/>
+        android:textColorHint="#FFFFFF"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="@string/createpass"
+        android:layout_gravity="center_horizontal" />
+    <EditText android:id="@+id/major"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/major"
+        android:layout_gravity="center_horizontal"
+        android:textColorHint="#FFFFFF"/>
+    <EditText android:id="@+id/email"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:layout_gravity="center_horizontal"
+        android:textColorHint="#FFFFFF"
+        />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="@string/register_button"
+
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:onClick="addUser"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        android:background="#B9090B"
+        android:textColor="#FFFFFF"
+        />
         android:text="Register"
         android:onClick="addUser"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_gravity="center_horizontal" />
+
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="104dp"
         android:layout_height="wrap_content"
         android:text="cancel"
-        android:onClick="cancel"/>
+        android:background="#B9090B"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18sp"
+        android:onClick="cancel"
+         />
 
 
 </LinearLayout>

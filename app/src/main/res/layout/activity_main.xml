@@ -2,7 +2,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+
+    android:background="#333333"
+    android:weightSum="1"
+    >
 
     <TextView
         android:id="@+id/header"
@@ -11,20 +15,50 @@
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:textSize="40sp"
-        android:textColor="@android:color/white"
+        android:textColor="#B9090B"
         android:textStyle="bold"
-        android:background="@android:color/holo_red_light"
+        android:background="#231f20"
+
         />
 
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background= "#3d4141"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background= "#3d4141"/>
+
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="155dp"
         android:layout_height="wrap_content"
         android:text="@string/login_button"
-        android:onClick="login"/>
+        android:onClick="login"
+        android:background="#B9090B"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true"
+        android:textSize="20dp"
+        android:ellipsize="middle"
+        android:focusableInTouchMode="true"
+        android:visibility="visible"
+
+        android:layout_weight="0.15" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="154dp"
+        android:layout_height="75dp"
         android:text="@string/register_button"
-        android:onClick="register"/>
+        android:onClick="register"
+        android:textSize="19dp"
+        android:background="#B9090B"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.07" />
 
 </LinearLayout>
