@@ -28,6 +28,15 @@
         android:layout_height="10dp"
         android:background= "#3d4141"
         />
+    <TextView
+        android:id="@+id/welcome"
+        android:text="Welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        />
 
     <Button
         android:layout_width="wrap_content"

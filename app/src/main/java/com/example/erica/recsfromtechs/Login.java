@@ -55,6 +55,11 @@ public class Login extends AppCompatActivity {
 
         if (storedPassword != null && storedPassword.equals(passwordText.getText().toString())) {
             Intent intent = new Intent(this,dashboard.class);
+            //this sends the user name to the dashboard
+            //called "extra", it is essentially a map
+            //"user" is our key
+            intent.putExtra("user", usernameText.getText());
+            Log.v("welcome", "input" + usernameText.getText());
             startActivity(intent);
         } else {
             int duration = Toast.LENGTH_SHORT;
