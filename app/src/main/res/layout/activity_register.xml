@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
+    android:background="#333333"
     tools:context="com.example.erica.recsfromtechs.Register">
 
     <android.support.design.widget.AppBarLayout
