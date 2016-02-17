@@ -40,6 +40,21 @@
         android:ems="10"
         android:hint="@string/createpass"
         android:layout_gravity="center_horizontal" />
+
+        <Spinner
+            android:layout_width="209dp"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:id="@+id/spinner"
+            android:ems="10"
+            android:hint="@string/major"
+            android:layout_gravity="center_horizontal" />
+    <View
+        android:layout_width="209dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#000000"/>
+
     <EditText android:id="@+id/major"
         android:layout_width="209dp"
         android:layout_height="wrap_content"
@@ -52,7 +67,7 @@
         android:hint="@string/email"
         android:layout_gravity="center_horizontal"
         android:textColorHint="#FFFFFF"
-        />
+        android:inputType="" />
 
     <Space
         android:layout_width="match_parent"

@@ -17,6 +17,14 @@
     <string name="createuser">Create a Username</string>
     <string name="createpass">Create a Password</string>
     <string name="confirmpass">Confirm Password</string>
-    <string name="major">Enter Your Major</string>
+    <string name="major">Select Your Major</string>
     <string name="email">Enter Your Email</string>
+    <string-array name="majors">
+        <item>Select your Major</item>
+        <item>Computer Science</item>
+        <item>Mechanical Engineering</item>
+        <item>Other</item>
+        <item>LOL</item>
+        <item>JK LOL</item>
+    </string-array>
 </resources>
