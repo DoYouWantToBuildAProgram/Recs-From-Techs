@@ -30,11 +30,22 @@ public class Login extends AppCompatActivity {
         editPasswords = passwords.edit();
     }
 
+    /**
+     * This method is used for the cancel button and returns the user to the main activity screen
+     *
+     * @param view the view of the current page
+     */
     public void cancel(View view) {
         Intent intent = new Intent(this,MainActivity.class);
         startActivity(intent);
     }
 
+    /**
+     * This method checks to see whether the login works or not when the login button is pressed.
+     * If the login works, then it redirects to the dashboard page, if not it pops up a toast.
+     *
+     * @param view the view of the current page
+     */
     public void loginSuccessful(View view) {
         EditText usernameText = (EditText) findViewById(R.id.username);
         EditText passwordText = (EditText) findViewById(R.id.password);

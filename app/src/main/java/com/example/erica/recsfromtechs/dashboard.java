@@ -42,6 +42,11 @@ public class dashboard extends AppCompatActivity {
 
     }
 
+    /**
+     * This method is used for the logout button and returns the user to the main activity screen
+     *
+     * @param view the view of the current page
+     */
     public void logout(View view) {
         Intent intent = new Intent(this,MainActivity.class);
         startActivity(intent);
