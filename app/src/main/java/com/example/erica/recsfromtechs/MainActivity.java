@@ -1,20 +1,22 @@
 package com.example.erica.recsfromtechs;
 
+
+import android.content.Intent;
 import android.content.SharedPreferences;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.content.Intent;
 import android.view.View;
 
-import java.util.HashMap;
+import com.android.volley.RequestQueue;
+import com.android.volley.toolbox.Volley;
 
 
 public class MainActivity extends AppCompatActivity {
     SharedPreferences passwords;
     SharedPreferences.Editor editPasswords;
+    private RequestQueue queue;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +26,9 @@ public class MainActivity extends AppCompatActivity {
         editPasswords = passwords.edit();
         editPasswords.putString("bob", "password");
         editPasswords.commit();
+
+        queue = Volley.newRequestQueue(this);
+
     }
 
     @Override

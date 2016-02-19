@@ -27,6 +27,10 @@
         <activity
             android:name=".dashboard"
             android:label="@string/title_activity_dashboard"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".VolleyActivityTest"
+            android:label="@string/title_activity_volley_activity_test"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
