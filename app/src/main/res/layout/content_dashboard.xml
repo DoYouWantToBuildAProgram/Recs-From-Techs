@@ -39,6 +39,16 @@
         />
 
     <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Search for Movies"
+    android:onClick="movieSearch"
+    android:background="#B9090B"
+    android:textColor="#FFFFFF"
+    android:textStyle = "bold"
+    />
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 

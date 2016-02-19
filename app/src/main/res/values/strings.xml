@@ -17,8 +17,10 @@
     <string name="createuser">Create a Username</string>
     <string name="createpass">Create a Password</string>
     <string name="confirmpass">Confirm Password</string>
-    <string name="major">Select Your Major</string>
+    <string name="major">Enter Your Major</string>
     <string name="email">Enter Your Email</string>
+    <string name="title_activity_volley_activity_test">VolleyActivityTest</string>
+    <string name="movieSearch">Search</string>
     <string-array name="majors">
         <item>Select your Major</item>
         <item>Computer Science</item>

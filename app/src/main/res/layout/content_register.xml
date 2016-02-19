@@ -78,8 +78,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/register_button"
-
-        android:textStyle="bold"
         android:padding="10dp"
         android:onClick="addUser"
         android:textSize="18sp"
