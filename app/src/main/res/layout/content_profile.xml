@@ -1,16 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.erica.recsfromtechs.Profile"
     tools:showIn="@layout/activity_profile"
-    tools:context="com.example.erica.recsfromtechs.Profile">
+    android:background="#333333"
+    android:orientation="vertical">
 
-</RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text1 for name"
+        android:id="@+id/name"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textColor="#B9090B"
+        android:textStyle="bold"
+        android:background="#231f20"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text2 for email"
+        android:id="@+id/email"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textColor="#B9090B"
+        android:textStyle="bold"
+        android:background="#231f20"
+         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text 3 for major"
+        android:id="@+id/major"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textColor="#B9090B"
+        android:textStyle="bold"
+        android:background="#231f20"
+        />
+    <EditText android:id="@+id/newName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter your new name"
+        android:textColorHint="#FFFFFF"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Name"
+        android:onClick="editName"
+        />
+    <EditText android:id="@+id/newEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter your new email"
+        android:textColorHint = "#FFFFFF"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "Edit Email"
+        android:onClick="editEmail"/>
+    <EditText android:id="@+id/newMajor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter your new major"
+        android:textColorHint = "#FFFFFF"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "Edit Major"
+        android:onClick = "editMajor"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "Back to Dashboard"
+        android:onClick = "backToDashboard"/>
+</LinearLayout>

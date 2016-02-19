@@ -19,4 +19,6 @@
     <string name="confirmpass">Confirm Password</string>
     <string name="major">Enter Your Major</string>
     <string name="email">Enter Your Email</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="name">Name</string>
 </resources>

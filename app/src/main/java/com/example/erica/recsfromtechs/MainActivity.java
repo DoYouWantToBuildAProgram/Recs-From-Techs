@@ -48,6 +48,10 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    /**
+     * Takes the user to the login page
+     * @param view The current layout with all the Android widgets
+     */
     public void login(View view) {
         Intent intent = new Intent(this, Login.class);
 
@@ -55,6 +59,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    /**
+     * Takes the user to the registration page with all the Android widgets
+     * @param view
+     */
     public void register(View view) {
         Intent intent = new Intent(this, Register.class);
 
