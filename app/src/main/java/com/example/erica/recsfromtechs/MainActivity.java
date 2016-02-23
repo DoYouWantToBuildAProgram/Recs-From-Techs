@@ -13,7 +13,7 @@ import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
 
 
-public class MainActivity extends AppCompatActivity {
+public class   MainActivity extends AppCompatActivity {
     SharedPreferences passwords;
     SharedPreferences.Editor editPasswords;
     private RequestQueue queue;

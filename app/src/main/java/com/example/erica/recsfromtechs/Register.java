@@ -32,7 +32,7 @@ public class Register extends AppCompatActivity implements AdapterView.OnItemSel
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-         passwords  = getSharedPreferences("MyPref", MODE_PRIVATE);
+        passwords  = getSharedPreferences("MyPref", MODE_PRIVATE);
         editPasswords = passwords.edit();
 
         spinner = (Spinner) findViewById(R.id.spinner);
