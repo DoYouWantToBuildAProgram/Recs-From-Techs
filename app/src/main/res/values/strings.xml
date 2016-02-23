@@ -21,6 +21,8 @@
     <string name="email">Enter Your Email</string>
     <string name="title_activity_volley_activity_test">VolleyActivityTest</string>
     <string name="movieSearch">Search</string>
+    <string name="searchScreen">Search Screen</string>
+
     <string-array name="majors">
         <item>Select your Major</item>
         <item>Computer Science</item>
@@ -29,4 +31,6 @@
         <item>LOL</item>
         <item>JK LOL</item>
     </string-array>
+    <string name="title_activity_search__screen">search_Screen</string>
+    <string name="title_activity_search_screen">searchScreen</string>
 </resources>
