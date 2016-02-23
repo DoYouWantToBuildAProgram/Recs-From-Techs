@@ -34,7 +34,7 @@ public class dashboard extends AppCompatActivity {
 
 
         //This is changing the text at the top of our dashboard to welcome our specific user
-        TextView welcomeTextView =new TextView(this);
+        TextView welcomeTextView = new TextView(this);
         welcomeTextView =(TextView)findViewById(R.id.welcome);
         welcomeTextView.setText("Welcome "+usernameText);
 
@@ -52,7 +52,7 @@ public class dashboard extends AppCompatActivity {
     }
 
     public void movieSearch(View view) {
-        Intent intent = new Intent(this,VolleyActivityTest.class);
+        Intent intent = new Intent(this,searchScreen.class);
         startActivity(intent);
 
     }
